@@ -11,12 +11,12 @@ A comprehensive multi-tenant website analytics solution built on Microsoft Fabri
 - **Data Quality Checks**: Automated validation and error handling
 
 ## 📁 Folder Structure
+- `Project Documentation`: Detailed walkthrough for the project (informally written)
 - `data_ingestion_pipeline/`: MySQL ingestion, schema validation
 - `data_cleaning_pipeline/`: Dataflow Gen2 logic
 - `data_enrichment_pipeline/`: Notebooks for traffic trends, session time, etc.
 - `powerbi_report/`: Dashboard visuals and `.pbix` file
-- `sql_scripts/`: SQL for table creation
-- `docs/`: Additional documentation
+- `screenshots/`: detailed screenshots
 
 ## 🏗️ Architecture
 - **Lakehouse** for Bronze & Silver layers

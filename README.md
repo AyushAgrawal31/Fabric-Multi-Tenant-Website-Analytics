@@ -9,10 +9,21 @@ A comprehensive multi-tenant website analytics solution built on Microsoft Fabri
 - **Incremental Loading**: Watermark-based data ingestion
 - **Real-Time Analytics**: Dynamic dashboard updates
 - **Data Quality Checks**: Automated validation and error handling
-- **Centralized Logging**: Per-tenant and per-step logging
+
+## 📁 Folder Structure
+- `data_ingestion_pipeline/`: MySQL ingestion, schema validation
+- `data_cleaning_pipeline/`: Dataflow Gen2 logic
+- `data_enrichment_pipeline/`: Notebooks for traffic trends, session time, etc.
+- `powerbi_report/`: Dashboard visuals and `.pbix` file
+- `sql_scripts/`: SQL for table creation
+- `docs/`: Additional documentation
 
 ## 🏗️ Architecture
-
+- **Lakehouse** for Bronze & Silver layers
+- **Warehouse** for Gold layer
+- **Data Pipelines** for ingestion, cleaning, enrichment
+- **Power BI** for visualization
+  
 MySQL Database → Schema Validation → Incremental Loading → Data Cleaning → Analytics Processing → Power BI Dashboard
 
 ### Data Flow:
@@ -38,11 +49,6 @@ MySQL Database → Schema Validation → Incremental Loading → Data Cleaning �
 - **Power BI**: Multi-tenant dashboards
 - **Data Pipelines**: Orchestration and scheduling
 
-## 🚀 Quick Start
-1. [Set up MySQL database](sql/create-tables.sql)
-2. [Configure Fabric workspace](deployment/fabric-deployment.md)
-3. [Deploy pipelines and notebooks](docs/setup-guide.md)
-4. [Configure Power BI reports](reports/)
 
 ## 📋 Data Sources
 - **Tenant A & B**: Website access logs with session tracking
@@ -75,19 +81,6 @@ MySQL Database → Schema Validation → Incremental Loading → Data Cleaning �
 - **User Experience**: Analyze navigation patterns for UX improvements
 - **Performance Monitoring**: Track session times and engagement
 - **Multi-tenant Insights**: Compare performance across tenants
-
-## 🔒 Security & Compliance
-- **Data Isolation**: Tenant-specific processing
-- **Schema Validation**: Ensure data integrity
-- **Access Control**: Role-based permissions
-- **Audit Logging**: Track all processing steps
-- **Data Anonymization**: Remove sensitive information
-
-## 📚 Documentation
-- [Architecture Deep Dive](docs/architecture.md)
-- [Setup and Configuration](docs/setup-guide.md)
-- [Deployment Guide](deployment/fabric-deployment.md)
-- [Troubleshooting](docs/troubleshooting.md)
 
 ## 🤝 Contributing
 1. Fork the repository

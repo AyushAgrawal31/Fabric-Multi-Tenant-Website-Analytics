@@ -9,12 +9,14 @@ A comprehensive multi-tenant website analytics solution built on Microsoft Fabri
 - **Incremental Loading**: Watermark-based data ingestion
 - **Real-Time Analytics**: Dynamic dashboard updates
 - **Data Quality Checks**: Automated validation and error handling
+- **Data Model**: Proper Data Modeling with relationships
 
 ## 📁 Folder Structure
 - `Project Documentation`: Detailed walkthrough for the project (informally written)
 - `data_ingestion_pipeline/`: MySQL ingestion, schema validation
 - `data_cleaning_pipeline/`: Dataflow Gen2 logic
 - `data_enrichment_pipeline/`: Notebooks for traffic trends, session time, etc.
+- `data_enrich(DataModeling)_pipeline`: Another Pipeline that is used for the data modeling enrrichment
 - `powerbi_report/`: Dashboard visuals and `.pbix` file
 - `screenshots/`: detailed screenshots
 

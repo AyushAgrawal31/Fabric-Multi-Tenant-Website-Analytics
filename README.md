@@ -1,7 +1,7 @@
 # Multi-Tenant Website Analytics Dashboard
 
 ## 🚀 Project Overview
-A comprehensive multi-tenant website analytics solution built on Microsoft Fabric that provides real-time insights into website traffic, user behavior, and navigation patterns across multiple tenants with automated schema validation and incremental data loading.
+A comprehensive multi-tenant website analytics solution built on Microsoft Fabric that provides insights into website traffic, user behavior, and navigation patterns across multiple tenants with automated schema validation and incremental data loading.
 
 ## ✨ Key Features
 - **Multi-Tenant Architecture**: Separate analytics for different tenants

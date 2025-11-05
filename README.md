@@ -7,7 +7,6 @@ A comprehensive multi-tenant website analytics solution built on Microsoft Fabri
 - **Multi-Tenant Architecture**: Separate analytics for different tenants
 - **Schema Validation**: Automated column-level validation with email notifications
 - **Incremental Loading**: Watermark-based data ingestion
-- **Real-Time Analytics**: Dynamic dashboard updates
 - **Data Quality Checks**: Automated validation and error handling
 - **Data Model**: Proper Data Modeling with relationships
 
